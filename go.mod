@@ -63,4 +63,4 @@ require (
 	sigs.k8s.io/yaml v1.1.0 // indirect
 )
 
-go 1.13
+go 1.12
