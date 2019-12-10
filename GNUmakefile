@@ -3,7 +3,7 @@ VETARGS?=-all
 GOFMT_FILES?=$$(find . -name '*.go' | grep -v vendor)
 CURRENT_VERSION = $(shell gobump show -r rke/)
 BUILD_LDFLAGS = "-s -w \
-	  -X github.com/yamamoto-febc/terraform-provider-rke/rke.Revision=`git rev-parse --short HEAD`"
+	  -X github.com/jbmcfarlin31/terraform-provider-rke/rke.Revision=`git rev-parse --short HEAD`"
 export GO111MODULE=on
 
 default: fmt lint test build

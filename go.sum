@@ -265,6 +265,8 @@ github.com/rancher/norman v0.0.0-20190529014815-f5744043a6fb h1:2VVm4r2aP6hZQ8/y
 github.com/rancher/norman v0.0.0-20190529014815-f5744043a6fb/go.mod h1:CgWdUHi0tUimz2RgS6WoC/cDHFSLx9G7EBhlp6wE0ck=
 github.com/rancher/rke v0.2.7 h1:2z/BnzOFbuZ8mMTtgwF4ro2z43xQeP6vlULjghq7J+I=
 github.com/rancher/rke v0.2.7/go.mod h1:YST8DVqSZURn0G7OFKXdrIT+AGHmrw1k2myhieqBwFA=
+github.com/rancher/rke v0.2.8 h1:dBumqwftj7NfXbdJGuAMSO+tbyAu29y4yfo9WeJbSt8=
+github.com/rancher/rke v0.2.8/go.mod h1:YST8DVqSZURn0G7OFKXdrIT+AGHmrw1k2myhieqBwFA=
 github.com/rancher/types v0.0.0-20190819190701-5c4900572399 h1:pr+6A5N0deTp9PlMyZbpaN7ZQzJNc0kbTIjeWwfFhDU=
 github.com/rancher/types v0.0.0-20190819190701-5c4900572399/go.mod h1:ePTc7xKI37jRSwgLsg63ITTADceptutuNVG8Fj33QaE=
 github.com/sergi/go-diff v1.0.0 h1:Kpca3qRNrduNnOQeazBd0ysaKrUJiIuISHxogkT9RPQ=
