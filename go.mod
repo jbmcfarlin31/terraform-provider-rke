@@ -42,7 +42,7 @@ require (
 	github.com/prometheus/common v0.0.0-20180801064454-c7de2306084e // indirect
 	github.com/prometheus/procfs v0.0.0-20180725123919-05ee40e3a273 // indirect
 	github.com/rancher/norman v0.0.0-20190529014815-f5744043a6fb // indirect
-	github.com/rancher/rke v0.2.8
+	github.com/rancher/rke v0.2.9
 	github.com/rancher/types v0.0.0-20190819190701-5c4900572399
 	github.com/sirupsen/logrus v1.4.2
 	github.com/smartystreets/assertions v0.0.0-20190116191733-b6c0e53d7304 // indirect
