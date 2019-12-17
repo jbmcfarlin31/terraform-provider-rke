@@ -26,16 +26,13 @@ replace (
 )
 
 require (
-	github.com/Nvveen/Gotty v0.0.0-20120604004816-cd527374f1e5 // indirect
 	github.com/coreos/go-systemd v0.0.0-20190212144455-93d5ec2c7f76 // indirect
 	github.com/docker/go-connections v0.4.0 // indirect
 	github.com/go-ini/ini v1.38.1 // indirect
 	github.com/gorilla/websocket v1.4.1 // indirect
-	github.com/gotestyourself/gotestyourself v2.2.0+incompatible // indirect
 	github.com/grpc-ecosystem/go-grpc-middleware v1.1.0 // indirect
 	github.com/hashicorp/go-getter v1.4.0
 	github.com/hashicorp/terraform-plugin-sdk v1.0.0
-	github.com/howeyc/gopass v0.0.0-20170109162249-bf9dde6d0d2c // indirect
 	github.com/rancher/rke v1.0.0
 	github.com/rancher/types v0.0.0-20191126013101-de3dc217d60f
 	github.com/sirupsen/logrus v1.4.2
