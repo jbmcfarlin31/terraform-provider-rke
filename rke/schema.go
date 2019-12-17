@@ -3,7 +3,7 @@ package rke
 import (
 	"github.com/hashicorp/terraform-plugin-sdk/helper/schema"
 	"github.com/hashicorp/terraform-plugin-sdk/helper/validation"
-	v3 "github.com/rancher/types/apis/management.cattle.io/v3"
+        "github.com/rancher/rke/metadata"
 )
 
 // NodeDataSourceSchema returns schema of rke_node_parameter
@@ -941,8 +941,8 @@ func ClusterSchema() map[string]*schema.Schema {
 			Optional: true,
 			Computed: true,
 			ValidateFunc: validation.StringInSlice(func() []string {
-				keys := make([]string, 0, len(v3.K8sVersionToRKESystemImages))
-				for k := range v3.K8sVersionToRKESystemImages {
+				keys := make([]string, 0, len(metadata.K8sVersionToRKESystemImages))
+				for k := range metadata.K8sVersionToRKESystemImages {
 					keys = append(keys, k)
 				}
 				return keys

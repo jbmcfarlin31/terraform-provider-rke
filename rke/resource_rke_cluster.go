@@ -104,7 +104,7 @@ func clusterUp(d *schema.ResourceData) error {
 		return err
 	}
 
-	apiURL, caCrt, clientCert, clientKey, _, clusterUpErr := cmd.ClusterUp(context.Background(), hosts.DialersOptions{}, flags)
+	apiURL, caCrt, clientCert, clientKey, _, clusterUpErr := cmd.ClusterUp(context.Background(), hosts.DialersOptions{}, flags, map[string]interface{}{})
 	if clusterUpErr != nil {
 		return clusterUpErr
 	}
@@ -138,7 +138,7 @@ func realClusterRemove(
 	flags cluster.ExternalFlags) error {
 
 	log.Infof(ctx, "Tearing down Kubernetes cluster")
-	kubeCluster, err := cluster.InitClusterObject(ctx, rkeConfig, flags)
+	kubeCluster, err := cluster.InitClusterObject(ctx, rkeConfig, flags, "")
 	if err != nil {
 		return err
 	}
@@ -265,7 +265,7 @@ func realClusterRead(ctx context.Context, dialersOptions hosts.DialersOptions, f
 		return nil, nil, newStateNotFoundError(err)
 	}
 
-	kubeCluster, err := cluster.InitClusterObject(ctx, fullState.DesiredState.RancherKubernetesEngineConfig.DeepCopy(), flags)
+	kubeCluster, err := cluster.InitClusterObject(ctx, fullState.DesiredState.RancherKubernetesEngineConfig.DeepCopy(), flags, "")
 	if err != nil {
 		return nil, nil, err
 	}
