@@ -942,7 +942,7 @@ func ClusterSchema() map[string]*schema.Schema {
 			Computed: true,
 			ValidateFunc: validation.StringInSlice(func() []string {
 				keys := make([]string, 0, len(metadata.K8sVersionToRKESystemImages))
-				for k := range metadata.K8sVersionToRKESystemImages[metadata.DefaultK8sVersion] {
+				for k := range metadata.K8sVersionToRKESystemImages {
 					keys = append(keys, k)
 				}
 				return keys
