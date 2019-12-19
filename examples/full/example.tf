@@ -169,6 +169,13 @@ EOL
       delete-collection-workers = 3
       v                         = 4
     }
+
+    # Adds additional environment variables to the container (this also works for the other kubernetes components - api, kubelet, etc.)
+    extra_env = [
+      "http_proxy=http://my.proxy.com:port",
+      "https_proxy=https://my.proxy.com:port"
+    ]
+
   }
 
   services_kube_controller {
