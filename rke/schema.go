@@ -1,6 +1,7 @@
 package rke
 
 import (
+	"context"
 	"github.com/hashicorp/terraform-plugin-sdk/helper/schema"
 	"github.com/hashicorp/terraform-plugin-sdk/helper/validation"
 	"github.com/rancher/rke/metadata"
@@ -941,6 +942,7 @@ func ClusterSchema() map[string]*schema.Schema {
 			Optional: true,
 			Computed: true,
 			ValidateFunc: validation.StringInSlice(func() []string {
+				metadata.InitMetadata(context.Background())
 				keys := make([]string, 0, len(metadata.K8sVersionToRKESystemImages))
 				for k := range metadata.K8sVersionToRKESystemImages {
 					keys = append(keys, k)
