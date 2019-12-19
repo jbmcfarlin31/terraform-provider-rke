@@ -103,8 +103,8 @@ EOL
   # In case the kubernetes_version and kubernetes image in system_images are defined,
   # the system_images configuration will take precedence over kubernetes_version.
   #
-  # Allowed values: [v1.13.12-rancher1-2, v1.14.8-rancher1-1, v1.15.5-rancher1-1]
-  kubernetes_version = "v1.15.5-rancher1-1"
+  # Allowed values: [v1.14.9-rancher1-1, v1.15.6-rancher1-2, v1.16.3-rancher1-1]
+  kubernetes_version = "v1.15.6-rancher1-2"
 
   ################################################
   # System Images
