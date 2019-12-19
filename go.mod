@@ -45,4 +45,4 @@ require (
 	k8s.io/client-go v11.0.1-0.20190805182715-88a2adca7e76+incompatible
 )
 
-go 1.12
+go 1.13
