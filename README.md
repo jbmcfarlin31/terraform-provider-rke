@@ -9,7 +9,7 @@ Terraform RKE providers can easily deploy Kubernetes clusters with [Rancher Kube
 #### Compatible Versions
 
 - Terraform: v0.11+(includes v0.12)
-- RKE: v1.0.0 (experimental)
+- RKE: v1.0.0
 
 **Current master is focusing on RKE v0.2.x. If you use RKE v0.1.x, please see [rke/v0.1.x](https://github.com/yamamoto-febc/terraform-provider-rke/tree/rke/v0.1.x) branch.**
 
@@ -164,4 +164,6 @@ You can view full example of tffile, [here](examples/full/example.tf).
   
 ## Author
 
-  * Kazumichi Yamamoto ([@yamamoto-febc](https://github.com/yamamoto-febc))
+  * Original - Kazumichi Yamamoto ([@yamamoto-febc](https://github.com/yamamoto-febc))
+  * Ownership Transferred to [Rancher Labs](https://github.com/rancher/terraform-provider-rke)
+  * Forked and Modified by Jonathon McFarlin ([@jbmcfarlin31](https://github.com/jbmcfarlin31))
